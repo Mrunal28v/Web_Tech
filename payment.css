@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=DM+Serif+Display&family=PT+Serif:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    font-family: 'Abril Fatface', serif;
+    font-family: 'DM Serif Display', serif;
+    font-family: 'PT Serif', serif;
+    text-transform: capitalize;
+    transition: all 0.2s linear;
+}
+ 
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    background: #e1f0fc;
+}
+ 
+.container form {
+   width: 700px;
+   padding: 20px;
+   background: #fff;
+   box-shadow: 5px 5px 30px rgb(0,0,0,0.2);
+   position: fixed;
+}
+ 
+.container form .row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+ 
+.container form .row .col{
+    flex: 1 1 250px;   
+}
+
+.col .title{
+    font-size: 22px;
+    color: #0d0d0c;
+    padding-bottom: 5px;
+}
+
+.col .ip{
+    margin: 15px 0;
+}
+
+.col .ip lable{
+    margin-bottom: 10px;
+    display: block;
+}
+
+.col .ip input, .col .ip select{
+    width: 100%;
+    border: 2px solid #ccc;
+    padding: 10px 15px;
+    font-size: 15px;
+    font-family: ;
+}
+
+.col .ip input:focus, .col .ip select:focus{
+    border: 1px solid #000;
+}
+
+.col .flex{
+    display: flex;
+    gap: 15px;  
+} 
+
+.col .flex .ip{
+    flex: 1 1;
+    margin-top: 5px;
+}
+
+.container form .sbmt_bt{
+    width: 100%;
+    padding: 12px;
+    font-size: 17px;
+    background: #4b607a;
+    color: #fff;
+    margin-top: 5px;
+    cursor: pointer;
+    letter-spacing: 1px;
+}
+
+.container form .sbmt_bt:hover{
+    background-color: #4c70a1;
+    color: white;
+    border: 5px solid white;
+}
+
+input::-webkit-inner-spin-button,
+input::-webkit-inner-spin-button{
+    display: none;
+}
