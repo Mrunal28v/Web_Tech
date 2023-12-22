@@ -1,11 +1,245 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/8755f6524d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+
+    <title>Watch</title>
 </head>
 <body>
-	<h1 style="color: bisque;">My first web page</h1>
+   
+
+    <!-- header -->
+    <header>
+        <div class="header">
+            <div class="nav-menu">
+                <ul>
+                    <li class="active">home</li>
+                    <li><a href="" >about</a></li>
+                    <li><a href="Categories.html.html">Collection</a></li>
+                    <li><a href="#">Wishlist</a></li>
+                </ul>
+            </div>
+            <div class="logo-container">
+                <h1 class="tracking-in-expand">sws</h1>
+            </div>
+            <div class="nav-account">
+                <ul>
+                    <li><a href="contact.html">contact Us</a></li>
+                    <li><i class="fa-regular fa-user icon-left"></i><a href="#" onclick="openLogin()">sign in</a></li>
+                    <li><i class="fa-solid fa-basket-shopping icon-left"></i><a href="#">cart</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- top banner -->
+    <section id="top-banner">
+        <div class="top-banner">
+            <div class="mySlides fade" style="display:flex">
+                <span>
+                    <h1>swatch</h1>
+                    <img class="motion" src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRTw7SZqHXx0jC9Or-ZauqQb0lUHTTvsHTB4il76j-TakkkDUanI7cwd6K_rGsQsiqlEhYefyRmh_P9ApKMlzgrADQCqYrpbxjBCnjtlGr8Ce0AMmXN8nwl&usqp=CAE">
+                    <h1>design</h1>
+                </span>
+            </div>
+            
+            <div class="mySlides fade1">                
+                <span>
+                    <h1>luxury</h1>
+                    <img src="https://media.naheed.pk/catalog/product/cache/17cb4734a0ff40d859ea4c0cfd876903/1/2/1210712-1.jpg" width="280" class="img2">
+                    <h1>brands</h1>
+                      
+                </span>
+            </div>
+            
+            <div class="mySlides fade2">
+                <span>
+                    <h2>designer</h2>
+                    <img src="https://s3.amazonaws.com/s3.brathwait.com/images/products/womens-rosegold-wristwatch-grey-strap.png?auto=compress%2Cformat&bg=00f3f3f3&fit=fill&fm=jpg&h=150&ixlib=php-1.1.0&q=90&sharp=0&w=150&s=44d83b9beea33fd6c64e1fc1e6b57208">
+                    <h2>watches</h2>
+                </span>
+            </div>
+            
+              <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)"><i class="fa-solid fa-angle-left"></i>&nbsp;&nbsp;&nbsp;previous</a>
+            <a class="browse-collection-btn" href="#collection">browse collection<br> <i class="fa-solid fa-angle-down"></i></a>
+            <a class="next" onclick="plusSlides(1)">next&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-angle-right"></i></a>
+        
+            <!-- social icons -->
+            <div class="social-icons">
+                <div class="icons"><i class="fa-brands fa-facebook"></i></div>
+                <div class="icons"><i class="fa-brands fa-instagram"></i></div>
+                <div class="icons"><i class="fa-brands fa-twitter"></i></div>
+            </div>
+        </div>        
+    </section> 
+
+    <!-- collection -->
+    <section id="collection">
+        <p class="heading-big">our collections</p>
+        <br><br>
+        <div class="collection">
+            <div class="watch-card">
+                <div class="watch-img">
+                    <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRTw7SZqHXx0jC9Or-ZauqQb0lUHTTvsHTB4il76j-TakkkDUanI7cwd6K_rGsQsiqlEhYefyRmh_P9ApKMlzgrADQCqYrpbxjBCnjtlGr8Ce0AMmXN8nwl&usqp=CAE" alt="" class="flip-scale-up-ver">
+                </div>
+                <div class="watch-info">
+                    <p class="watch-name">FASTRACK ANALOG GOLDEN DIAL MEN’S WATCH
+                        </p>
+                    <p class="watch-rating">★★★★</p>
+                    <p class="watch-price">₹ 5999</p>
+                </div>
+            </div>
+            <div class="watch-card">
+                <div class="watch-img">
+                    <img src="https://m.media-amazon.com/images/I/61M7zQQsEKL.jpg" alt="">
+                </div>
+                <div class="watch-info">
+                    <p class="watch-name">GUANA RED LAWSON HAND WATCH
+                        </p>
+                    <p class="watch-rating">★★★★★</p>
+                    <p class="watch-price">₹ 8999</p>
+                </div>
+            </div>
+            <div class="watch-card">
+                <div class="watch-img">
+                    <img src=" https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQSqPjyPw2CwovvTYLgZE0z0L6GSRXHxg73j3P91bXvFAFU5y8bT3TGL1MelKvge65dm0_PA0rU_w66U5NctUMxCKb68d-Yl6S4FHn3JQwf&usqp=CAE" alt="" class="slide-top">
+                </div>
+                <div class="watch-info">
+                    <p class="watch-name">SONATA ANALOG GOLD DIAL WOMEN'S WATCH
+                        </p>
+                    <p class="watch-rating">★★★★</p>
+                    <p class="watch-price">₹ 10999</p>
+                </div>
+            </div>
+            
+        </div>
+       
+    </section> 
+
+    <!-- Section 2 -->
+
+    <section id="collection">
+        <h1 class="heading-big"></h1>
+        <div class="collection">
+            <div class="watch-card">
+                <div class="watch-img">
+                    <img src="https://n.nordstrommedia.com/id/sr3/80322c37-1da0-4e2e-93a3-60c4596f3e95.jpeg?h=365&w=240&dpr=2" alt="">
+                </div>
+                <div class="watch-info">
+                    <p class="watch-name">FASTRACK ANALOG GOLDEN DIAL MEN’S WATCH
+                        </p>
+                    <p class="watch-rating">★★★★</p>
+                    <p class="watch-price">₹ 5999</p>
+                </div>
+            </div>
+            <div class="watch-card">
+                <div class="watch-img">
+                    <img src="https://images.meesho.com/images/products/176688334/wz9ef_512.webp
+                    " alt="">
+                </div>
+                <div class="watch-info">
+                    <p class="watch-name">GUANA RED LAWSON HAND WATCH
+                        </p>
+                    <p class="watch-rating">★★★★★</p>
+                    <p class="watch-price">₹ 8999</p>
+                </div>
+            </div>
+            <div class="watch-card">
+                <div class="watch-img">
+                    <img src=" https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/71SfB3u04CL._AC_UY1000_.jpg" alt="" class="slide-top">
+                </div>
+                <div class="watch-info">
+                    <p class="watch-name">SONATA ANALOG GOLD DIAL WOMEN'S WATCH
+                        </p>
+                    <p class="watch-rating">★★★★</p>
+                    <p class="watch-price">₹ 10999</p>
+                </div>
+            </div>
+            
+        </div>
+         <button class="btn" onclick="show()"><a href="project.html">show all</a></button>
+    </section>
+    <!-- footer -->
+    <footer>
+        <p>SWS © 2023. All Rights Reserved.</p>
+    </footer>
+
+    <!-- login -->
+     <section class="login-container" id="login-container">
+        <div class="login">
+            <div class="img">
+                <img src="https://wallpapercave.com/wp/wp2168271.jpg" alt="">
+            </div>
+            <div class="login-input">
+                <div class="btn-switch">
+                    <p>login</p>
+                    <p>Register</p>
+                </div>
+                <div class="input-box">
+                    <label for="username">username</label>
+                    <input type="text" name="" id="username">
+                </div>
+                <div class="input-box">
+                    <label for="password">password</label>
+                    <input type="password" name="" id="password">
+                </div>
+                <div class="input-box">
+                    <button class="btn signin-btn">Sign in</button>
+                </div>
+                <a href="#">forget password?</a>
+            </div>
+            <button class="close" onclick="closeLogin()">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>  
+     </section> 
+     <script type="text/javascript">
+         function show(){
+            open("Categories.html.html")
+         }
+
+         let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+
+// login
+function openLogin(){
+  document.getElementById("login-container").style.display = "flex";
+}
+
+function closeLogin(){
+  document.getElementById("login-container").style.display = "none";
+}
+     </script>
 </body>
 </html>
+	

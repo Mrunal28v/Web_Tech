@@ -1,0 +1,209 @@
+:root{
+    --light-bg: #f4f2f2;
+    --light-text: #d9d3cf;
+    --text-1: #af7f66;
+    /* --text-1: #c28665; */
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Oswald', sans-serif;
+    text-decoration: none;
+}
+
+ul li{
+    list-style-type: none;
+    cursor: pointer;
+}
+ul li a1{
+    color: black;
+    cursor: pointer;
+    padding: 5px 10px;
+}
+ul li a1:hover{
+    color: var(--text-1);
+}
+
+a1{
+    text-decoration: none;
+
+}
+.active{
+    text-color: black;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Playfair Display', serif;
+}
+
+.btn{
+    padding: 12px 30px;
+    width:fit-content;
+    text-transform: uppercase;
+    background: transparent;
+    color: var(--text-1);
+    border: 1px solid var(--text-1);
+    cursor: pointer;
+    border-radius: 3px;
+    transition: all 0.3s;
+}
+.btn:hover{
+    background: var(--text-1);
+    color: white;
+    transition: all 0.3s;
+}
+
+.icon-left{
+    /* font-size: 13px; */
+    margin-right: 8px;
+}
+.icon-right{
+    /* font-size: 13px; */
+    margin-left: 8px;
+}
+
+header{
+    width: 100%;
+    height: 70px;
+    padding: 10px 0;
+    text-transform: uppercase;
+    font-size: 15px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    position: fixed;
+    z-index: 100;
+    background: white;;
+}
+
+header ul{
+    display: flex;
+    gap: 40px;
+}
+
+.header{
+    display: flex;
+    gap: 20px;
+    width: 95%;
+    height: 100%;
+    margin: 0 auto;
+}
+.logo-container h1{
+    font-size: 50px;
+    color: var(--text-1);
+}
+
+.nav-menu{
+    display: flex;
+    align-items: center;
+    width: 40%;
+}
+.nav-menu .active{
+    color: var(--text-1);
+}
+
+.logo-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+}
+
+.nav-account{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    width: 40%;
+}
+img{
+    margin-right: 150px;
+}
+.dimg{
+    margin-left: 450px;
+    border-spacing: 30px;
+}
+.dimg2{
+    margin-left: 450px;
+}
+  
+/css/
+
+a { color:black; }
+
+        .buton
+        {color: black;
+          background-color:skyblue; }
+nav a {
+            display: inline-block;
+            padding: 10px;
+            color: darkreds;
+            text-decoration: none;
+            font-weight: bold;
+        }
+nav a:hover {
+            background-color:red;
+            color: #fff;
+        }
+        nav {
+            /*position: fixed;
+            top: 0px;
+            left: 0px;*/
+            background-color: #587D87;
+            padding: 50%px;
+            text-align: center;}
+
+ /* footer */
+footer{
+    width: 100%;
+    padding: 30px 0;
+    background: #272626;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-color: white;
+}
+
+      }
+section {
+            margin: 20px;
+            padding: 10px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+        }
+   .tab{width: 50%;
+        align-content: center;}                
+
+
+ h3  {
+    text-decoration: none;
+        color:var(--text-1);
+    }
+
+ p   {
+    
+    text-decoration: none;
+            color: black;
+        }
+
+
+            /* nav.css */
+.buton {
+    background-color: #4CAF50; /* Green background color */
+    color: white; /* White text color */
+    padding: 10px 20px; /* Padding inside the button */
+    text-align: center; /* Center text horizontally */
+    text-decoration: none; /* Remove underline from links */
+    display: inline-block; /* Display as inline block so padding and width work */
+    font-size: 16px; /* Font size of the text */
+    margin: 10px; /* Add some margin around the button */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Add rounded corners */
+
+}
+
+.buton:hover {
+    background-color: orangered; /* Darker green color on hover */
+}
